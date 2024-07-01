@@ -32,7 +32,7 @@ class agentTools:
         if('error' in data.keys()):
             self.errorActions()
             return
-        summary = self.createShortSummary(self,data['summary'])
+        summary = self.createShortSummary(data['summary'])
         self.displayPdf(data['PDF_URL'])
         self.answerUser(summary)
     
